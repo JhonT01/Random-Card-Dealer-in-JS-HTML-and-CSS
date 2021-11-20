@@ -1,1 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(67, 62, 62);
+}
+
+h1 {
+  color: white;
+}
+#poker-card {
+  border: 3px solid black;
+  padding: 5px;
+  background-color: white;
+  width: 162px;
+  height: 243px;
+}
