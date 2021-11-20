@@ -8,9 +8,39 @@ h1 {
   color: white;
 }
 #poker-card {
+  margin: auto;
+  padding: auto;
   border: 3px solid black;
+  border-radius: 15px;
   padding: 5px;
   background-color: white;
-  width: 162px;
-  height: 243px;
+  width: 210px;
+  height: 315px;
+  font-size: 55px;
+}
+
+.diamont {
+  color: red;
+}
+
+.heart {
+  color: red;
+}
+
+.spade {
+}
+
+.clup {
+}
+
+.content {
+  font-size: 75px;
+}
+
+#bottom-card {
+  text-align: left;
+  transform: rotate(180deg);
+}
+#header-card {
+  text-align: left;
 }

@@ -9,7 +9,7 @@ import "./assets/img/4geeks.ico";
 let suit = ["♦", "♥", "♠", "♣"];
 let card = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
 
-window.onload = function() {
+window.onload = () => {
   //write your code here
   console.log("Generando carta");
   printCard(suit, card);
@@ -22,6 +22,7 @@ function printCard(suit, card) {
   let header_card = document.getElementById("header-card");
   let content_card = document.getElementById("content-card");
   let bottom_card = document.getElementById("bottom-card");
+  let alert_message = document.getElementById("message");
 
   switch (suit_number) {
     case 0:
@@ -38,9 +39,11 @@ function printCard(suit, card) {
       break;
   }
 
-  header_card.innerHTML = `<p id="${css_class}">${suit[suit_number]}</p>`;
-  content_card.innerHTML = `<p id="${css_class}">${card[card_number]}</p>`;
-  bottom_card.innerHTML = `<p id="${css_class}">${suit[suit_number]}</p>`;
+  header_card.innerHTML = `<p class="${css_class}">${suit[suit_number]}</p>`;
+  content_card.innerHTML = `<p class="content">${card[card_number]}</p>`;
+  bottom_card.innerHTML = `<p class="${css_class}">${suit[suit_number]}</p>`;
+
+  alert_message.innerHTML = `The card is <b>${card[card_number]} of ${css_class}</b>`;
 }
 
 function randomCard() {
